@@ -1,0 +1,16 @@
+{
+    "name": "fr.dorhan.attribute-system",
+    "version": "0.1.0",
+    "displayName": "DO.AttributeSystem",
+    "description": "A package to manage attributes and modifiers like RPG",
+    "unity": "2019.3",
+    "unityRelease": "11f1",
+    "keywords": [
+        "inventory"
+    ],
+    "author": {
+        "name": "Donovan Orhan",
+        "email": "dono.orhan+unity@gmail.com",
+        "url": "http://dorhan.fr"
+    }
+}
