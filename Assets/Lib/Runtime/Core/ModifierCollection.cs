@@ -101,8 +101,9 @@ namespace Do.AttributeSystem
         public int RemoveAllModifiers()
         {
             int modifiersCount = 0;
-            foreach (Modifier modifier in modifiers)
-                modifiersCount += Remove(modifier) ? 1 : 0;
+            int modifiersAmount = modifiers.Count;
+            for (int i = modifiersAmount - 1; i >= 0; i--)
+                modifiersCount += Remove(modifiers[i], false) ? 1 : 0;
 
             if (OnModifiersRemoved != null)
                 OnModifiersRemoved();

@@ -27,6 +27,7 @@ namespace Tests
             for (int i = 0; i < 3; i++)
                 modifierCollection.Add(new Modifier());
 
+            Assert.AreEqual(3, modifierCollection.Modifiers.Count);
             Assert.AreEqual(3, modifierCollection.RemoveAllModifiers());
             Assert.AreEqual(0, modifierCollection.Modifiers.Count);
         }
