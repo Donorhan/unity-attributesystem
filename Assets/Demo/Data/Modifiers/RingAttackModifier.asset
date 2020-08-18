@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8844d2af5fb8a4ef3a5ea5f8281f5900, type: 3}
   m_Name: RingAttackModifier
   m_EditorClassIdentifier: 
-  type: {fileID: 11400000, guid: 14a8ceb35d9194a80bbcbc6e4e3baeae, type: 2}
+  attributeType: {fileID: 11400000, guid: 14a8ceb35d9194a80bbcbc6e4e3baeae, type: 2}
   modifiers:
   - scope: 1
     type: 1

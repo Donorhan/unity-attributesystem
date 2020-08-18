@@ -1207,7 +1207,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Eat (Health +6)
+  m_Text: Eat (Hunger +6)
 --- !u!222 &595776591
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2786,131 +2786,18 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!1 &1722824134
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1722824135}
-  - component: {fileID: 1722824136}
-  m_Layer: 0
-  m_Name: Attributes
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1722824135
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722824134}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 568537110}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1722824136
+--- !u!114 &1722824136 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7334422844355441337, guid: 7d95e270207ad4ed7b191531f631353f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1214768543616320240}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722824134}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 554ae7d3729d9494593d396af6753ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attributes:
-    attributes:
-    - type: {fileID: 11400000, guid: 14a8ceb35d9194a80bbcbc6e4e3baeae, type: 2}
-      modifiers: []
-      baseValue: 5
-      currentValue: 5
-      onModifierAdded:
-        m_PersistentCalls:
-          m_Calls: []
-      onModifierRemoved:
-        m_PersistentCalls:
-          m_Calls: []
-      onMinimumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-      onMaximumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-    - type: {fileID: 11400000, guid: ce633b6ee950e4c4b90ce12f2e4d168e, type: 2}
-      modifiers: []
-      baseValue: 8
-      currentValue: 8
-      onModifierAdded:
-        m_PersistentCalls:
-          m_Calls: []
-      onModifierRemoved:
-        m_PersistentCalls:
-          m_Calls: []
-      onMinimumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-      onMaximumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-    - type: {fileID: 11400000, guid: 65e391530c6e246fc92d1d842ad852b3, type: 2}
-      modifiers: []
-      baseValue: 100
-      currentValue: 100
-      onModifierAdded:
-        m_PersistentCalls:
-          m_Calls: []
-      onModifierRemoved:
-        m_PersistentCalls:
-          m_Calls: []
-      onMinimumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-      onMaximumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-    - type: {fileID: 11400000, guid: 3c76c168d982142e0bd86c07fa0867eb, type: 2}
-      modifiers: []
-      baseValue: 100
-      currentValue: 0
-      onModifierAdded:
-        m_PersistentCalls:
-          m_Calls: []
-      onModifierRemoved:
-        m_PersistentCalls:
-          m_Calls: []
-      onMinimumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-      onMaximumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-    - type: {fileID: 11400000, guid: 5f08882da55ab408495c90cab885b388, type: 2}
-      modifiers: []
-      baseValue: 150
-      currentValue: 150
-      onModifierAdded:
-        m_PersistentCalls:
-          m_Calls: []
-      onModifierRemoved:
-        m_PersistentCalls:
-          m_Calls: []
-      onMinimumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
-      onMaximumValueReachedEvent:
-        m_PersistentCalls:
-          m_Calls: []
 --- !u!1 &1738946529
 GameObject:
   m_ObjectHideFlags: 0
