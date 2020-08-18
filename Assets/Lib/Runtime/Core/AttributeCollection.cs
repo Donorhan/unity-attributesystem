@@ -24,18 +24,6 @@ namespace Do.AttributeSystem
             return attribute;
         }
 
-        public void ApplyModifiers(float timeElapsed)
-        {
-            foreach (Attribute attribute in attributes)
-                attribute.ApplyModifiers(timeElapsed);
-        }
-
-        public void SetToMaxValue()
-        {
-            foreach (Attribute attribute in attributes)
-                attribute.SetToMaxValue();
-        }
-
         public List<Attribute> Attributes => attributes;
     }
 }

@@ -9,16 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e60cb719ddc3f4b6dbebfad077912368, type: 3}
-  m_Name: SleepStaminaModifier
+  m_Script: {fileID: 11500000, guid: 364f1bdcc27964cabbc154e51686a2d0, type: 3}
+  m_Name: SleepEffect
   m_EditorClassIdentifier: 
   type: {fileID: 11400000, guid: 5f08882da55ab408495c90cab885b388, type: 2}
   modifiers:
-    modifiers:
-    - scope: 1
-      target: 1
-      type: 0
-      value: 0.1
-      duration: -1
-      overTime: 1
-      constant: 0
+  - scope: 0
+    type: 0
+    value: 1
+  sequence: 0
+  timeBetweenSteps: 0

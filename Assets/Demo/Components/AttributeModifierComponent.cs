@@ -3,34 +3,25 @@ using UnityEngine;
 
 public class AttributeModifierComponent : MonoBehaviour
 {
-    [SerializeField] AttributesComponent targetAttributesComponent = null;
-    [SerializeField] AttributeModifier[] attributeModifiers = null;
+    [SerializeField] AttributesComponent target = null;
+    [SerializeField] Do.AttributeSystem.Scriptables.AttributeModifiers[] attributeModifiers = null;
+    [SerializeField] Do.AttributeSystem.Scriptables.AttributeEffect[] effects = null;
 
     public void Enable()
     {
-        AttributeCollection targetAttributes = targetAttributesComponent.Attributes;
+        foreach (var attributeModifier in attributeModifiers)
+            target.AddModifiers(attributeModifier.AttributeType, attributeModifier.Modifiers);
 
-        foreach (AttributeModifier attributeModifier in attributeModifiers)
-        {
-            var attribute = targetAttributes.Find(attributeModifier.Type);
-            if (attribute == null)
-                return;
-
-            attribute.Modifiers.Add(attributeModifier.Modifiers);
-        }
+        foreach (var effect in effects)
+            target.ApplyEffect(effect);
     }
 
     public void Disable()
     {
-        AttributeCollection targetAttributes = targetAttributesComponent.Attributes;
+        foreach (var attributeModifier in attributeModifiers)
+            target.RemoveModifiers(attributeModifier.AttributeType, attributeModifier.Modifiers);
 
-        foreach (AttributeModifier attributeModifier in attributeModifiers)
-        {
-            var attribute = targetAttributes.Find(attributeModifier.Type);
-            if (attribute == null)
-                return;
-
-            attribute.Modifiers.Remove(attributeModifier.Modifiers);
-        }
+        foreach (var effect in effects)
+            target.UnapplyEffect(effect);
     }
 }
