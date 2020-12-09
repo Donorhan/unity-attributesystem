@@ -82,12 +82,10 @@ namespace Do.AttributeSystem
 
         void LateUpdate()
         {
+            Attribute attribute = null;
             foreach (Scriptables.AttributeEffect effect in effects)
             {
-                Attribute attribute = attributes.Find(effect.AttributeType);
-                if (attribute == null)
-                    throw new Exception($"The attribute \"{effect.AttributeType}\" can't be found");
-
+                attribute = attributes.Find(effect.AttributeType);
                 foreach (Modifier modifier in effect.Modifiers)
                     attribute.ApplyModifier(modifier, Time.deltaTime);
             }
