@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "displayName": "DO.AttributeSystem",
     "description": "A package to manage attributes and modifiers like RPG",
-    "unity": "2020.1",
+    "unity": "2020.3",
     "unityRelease": "0f1",
     "keywords": [
         "attributes",
